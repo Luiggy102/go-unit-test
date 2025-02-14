@@ -1,0 +1,23 @@
+mode: set
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:22.76,24.16 2 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:24.16,26.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:28.2,32.16 4 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:32.16,34.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:37.57,44.40 3 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:44.40,46.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:48.2,48.16 1 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:48.16,50.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:52.2,53.16 2 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:53.16,55.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:57.2,57.50 1 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:60.78,64.16 3 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:64.16,66.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:69.2,69.48 1 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:69.48,71.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:73.2,73.42 1 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:73.42,75.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:77.2,78.16 2 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:78.16,80.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:82.2,85.16 3 1
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:85.16,87.3 1 0
+github.com/Luiggy102/go-unit-test/controller/pokeApiHandler.go:89.2,89.24 1 1

@@ -61,7 +61,7 @@ func TestGetPokemonFromApiWithMocks(t *testing.T) {
 // endpont mocking
 // "/pokemon/{id}"
 // controller.GetPokemon(w http.ResponseWriter, r *http.Request)
-func TestGetPokemon(t *require.TestingT) {
+func TestGetPokemon(t *testing.T) {
 	c := require.New(t)
 
 	// Request is Get
