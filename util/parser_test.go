@@ -59,3 +59,18 @@ func TestParsePokemonTypeNotFound(t *testing.T) {
 	// the same error
 	c.EqualError(ErrNotFoundPokemonType, err.Error())
 }
+
+func BenchmarkParser(b *testing.B) {
+	c := require.New(b)
+
+	var pokeapiResponse models.PokeApiPokemonResponse
+	body, err := os.ReadFile("samples/pokeapi_response.json")
+	c.NoError(err)
+	err = json.Unmarshal(body, &pokeapiResponse)
+	c.NoError(err)
+
+	for n := 0; n < b.N; n++ {
+		_, err := ParsePokemon(pokeapiResponse)
+		c.NoError(err)
+	}
+}
