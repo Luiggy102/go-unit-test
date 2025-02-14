@@ -35,3 +35,27 @@ func TestParsePokemon(t *testing.T) {
 	// compare
 	c.Equal(expected, result)
 }
+
+// for no pokemon type in json
+func TestParsePokemonTypeNotFound(t *testing.T) {
+	// require for assertions
+	c := require.New(t)
+
+	// get the poke-api response
+	var pokeapiResponse models.PokeApiPokemonResponse
+	// parse json from samples
+	body, err := os.ReadFile("samples/pokeapi_response.json")
+	c.NoError(err)
+	err = json.Unmarshal(body, &pokeapiResponse)
+	c.NoError(err)
+
+	// empty pokemon type (panic error)
+	pokeapiResponse.PokemonType = []models.PokemonType{}
+
+	// -- check the parse funcion -- //
+	_, err = ParsePokemon(pokeapiResponse)
+	c.NotNil(err) // is an error
+
+	// the same error
+	c.EqualError(ErrNotFoundPokemonType, err.Error())
+}
