@@ -1,6 +1,8 @@
 package sometests
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestAddSuccess(t *testing.T) {
 	result := Add(20, 2)
