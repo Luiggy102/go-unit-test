@@ -37,7 +37,10 @@ func respondwithJSON(w http.ResponseWriter, code int, payload interface{}) {
 func GetPokemon(w http.ResponseWriter, r *http.Request) {
 	id := mux.Vars(r)["id"]
 
+	// separate functions
 	apiPokemon, err := GetPokemonFromPokeApi(id)
+
+	// check the errors with errors package
 	if errors.Is(err, ErrPokemonNotFound) {
 		respondwithJSON(w, http.StatusNotFound, fmt.Sprintf("pokemon not found: %s", id))
 	}
@@ -62,6 +65,7 @@ func GetPokemonFromPokeApi(id string) (models.PokeApiPokemonResponse, error) {
 		return models.PokeApiPokemonResponse{}, err
 	}
 
+	// check the status code from the response
 	if response.StatusCode == http.StatusNotFound {
 		return models.PokeApiPokemonResponse{}, ErrPokemonNotFound
 	}
